@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <title>Scrollytelling with Scrollama and D3 (demo)</title>
+      <meta name="description" content="An example of how to combine scrollama.js with d3.js for scrollytelling" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+      <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    
+    <main>
+      <section class="generic" id="intro">
+        <h1>
+            The new school 2023 graduates' statistics
+        </h1>
+        <p>
+            the graduating class of 2023 at The New School represents a diverse and dynamic group of students and this data visualization explores key statistics about these graduates.
+            By analyzing this data, we gain a clearer understanding of who these graduates are and the paths they’ve taken.
+        </p>
+        <p>
+            Have fun.
+        </p>
+        <p class="seperator">
+        </p>
+      </section>
+
+      <section id="scrolly">
+          
+        <figure>
+          <div class="viz" id="avicii_viz"></div>
+        </figure>
+
+        <article>
+            
+            <div class="step" data-step="1">
+              
+                <h2>The Majors</h2>
+                <p>
+                    Each of the 12 dots on this graph represents one of the top 12 majors among The New School's 2023 graduates.
+                </p>
+            </div>
+            
+            <div class="step" data-step="2">
+                <h2>Departments</h2>
+                <p>
+                    The four colors of the dots correspond to The New School's academic divisions—including Parsons School of Design, The New School for Social Research, School of Media Studies, and the College of Performing Arts
+                    <span class="label red">The New School for Social Research</span>, 
+                    <span class="label">School of Media Studies</span>, or 
+                    <span class="label green">Parsons School of Design</span>.
+                </p>
+            </div>
+            
+            <div class="step" data-step="2">
+                <h2>Amount</h2>
+                <p>
+                    The size of each dot corresponds to the number of 2023 graduates from that major—larger dots indicate higher graduation numbers, allowing you to quickly compare the most and least populated fields of study.
+                </p>
+            </div>
+            
+            <div class="step" data-step="3">
+                <h2>Citations</h2>
+                <p>
+                    The position of each dot along the horizontal position (x-axis) reflects the average number of citations per published paper by students in that major, highlighting which fields generate the most influential research.
+                </p>
+            </div>
+            
+            <div class="step" data-step="4">
+                <h2>Position y by magnitude</h2>
+                <p>
+                    The vertical position (y-axis) of each dot represents the post-graduation freelance or self-employment rate for that major—higher dots indicate fields where graduates are more likely to pursue independent work.
+                </p>
+            </div>
+            
+            <div class="step" data-step="5">
+                <h2>Simplifed dots</h2>
+                <p>
+                    Now that I have updated the positions of the majors,
+                    here is a visualisation for the graph created
+                </p>
+            </div>
+            
+            <div class="step" data-step="6">
+                <h2>Path</h2>
+                <p>
+                    connecting the dots from the oldest major to the newest major
+                </p>
+            </div>
+            
+            <div class="step" data-step="7">
+                <h2>A curved path</h2>
+                <p>
+                </p>
+            </div>
+            
+            <div class="step" data-step="8">
+                <h2>The result</h2>
+                <p>
+                </p>
+            </div>
+        </article>
+          
+      </section>
+
+      <section class="generic" id="outro">
+        <p class="seperator">
+        </p>
+        <p>
+        </p>  
+        <p>
+            If you have any question, <a href="http://www.edriessen.com/contact/">please do reach out to me</a>. 
+        </p>    
+    </section>
+    <section class="generic" id="footer">
+        <p>
+            <i>
+                The web template was originally created by Erik Driessen
+            </i>  
+        </p>
+      </section>
+    </main>
+
+<!--     <div class='debug'></div> -->
+    <script src="src/d3.5.9.1.min.js"></script>
+    <script src="src/intersection-observer.js"></script>
+    <script src="src/stickyfill.min.js"></script>
+    <script src="src/scrollama.min.js"></script>
+    <script src="data/aviciiTimData.js"></script>
+    <script src="d3-animations.js"></script>
+    <script src="scrollama-settings.js"></script>
+  </body>
+</html>
